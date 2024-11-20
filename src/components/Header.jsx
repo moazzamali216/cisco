@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import navLogo from "../assets/images/svg/nav-logo.svg";
-
 
 
 const Header = () => {
@@ -21,12 +19,14 @@ const SectionScroll = () => {
     // Check if the page has been scrolled more than 10px
     if (window.scrollY > 25) {
       // Add "fixed" class to the header element
+      Section.current.classList.remove("absolute");
       Section.current.classList.add("fixed");
       Section.current.classList.add("top-[-45px]");
     } else {
       // Remove "fixed" class when scrolled back above 10px
       Section.current.classList.remove("fixed");
-      Section.current.classList.add("top-[-45px]");
+      Section.current.classList.remove("top-[-45px]");
+      Section.current.classList.add("absolute")
     }
   }
 };
@@ -41,7 +41,8 @@ useEffect(() => {
   };
 }, []); 
   return (
-<div ref={Section} style={{transition:"all ease 1s"}} className=" w-full     bg-white drop-shadow-lg ">
+<>
+<div ref={Section} style={{transition:"all ease 1s"}} className=" w-full absolute  z-[100]  bg-white drop-shadow-lg ">
 
   <div  className=" md:flex hidden px-[25px] lg:px-[70px] xl:px-[135px]    container bg-white mx-auto py-6 flex-col  w-full">
    <div  className="w-full  gap-6  flex justify-end" >
@@ -75,22 +76,26 @@ useEffect(() => {
 
 
 
+
+
+
+</div>
   {/* Mobile Nav Full */}
-  <div className="w-full flex md:hidden items-center justify-between tex  py-6 px-4 ">
+  <div className="w-full flex drop-shadow-lg fixed top-0 z-[100] bg-white md:hidden items-center justify-between tex  py-6 px-4 ">
   <div className="flex items-center ">
       <h1 className=" text-xl lg:text-3xl w-[100px] lg:w-[150px]">Logo Co.</h1>
     </div>
     <div>
     <button onClick={toggleMobileNav} className="text-gray-600">
-          <i className={`fa-solid ${isMobileNavOpen ? "fa-xmark" : "fa-bars"} text-2xl`}></i>
+          <i className={`fa-solid ${isMobileNavOpen ? "fa-xmark" : "fa-bars"}  text-2xl`}></i>
         </button>
     </div>
   </div>
 
 
    {/* Mobile Navigation Drawer (Slides in from the Right) */}
-<div
-  className={`fixed top-0 right-0 w-full md:hidden h-screen bg-white transform transition-transform duration-300 ease-in-out ${
+<div 
+  className={`fixed top-0  z-[100] right-0 w-full md:hidden h-screen bg-white transform transition-transform duration-300 ease-in-out ${
     isMobileNavOpen ? "translate-x-0" : "translate-x-full"
   }`}
 >
@@ -109,17 +114,17 @@ useEffect(() => {
         <i className="fa-solid text-[rgba(40,64,255,1)] fa-caret-down"></i>
       </div>
       <div className="flex justify-center items-center gap-4">
-        <a href="#" className="font-light inter text-gray-600 text-sm">Contact Us</a>
-        <a href="#" className="font-light inter text-gray-600 text-sm">Log In</a>
+        <a href="" className="font-light inter text-gray-600 text-sm">Contact Us</a>
+        <a href="" className="font-light inter text-gray-600 text-sm">Log In</a>
       </div>
     </div>
 
     {/* Main Navigation Links for Mobile */}
     <div className="flex w-full justify-center items-center flex-col gap-6 mb-6">
-      <a href="#" className="text-gray-700">Experiences</a>
-      <a href="#" className="text-gray-700">Technologies</a>
-      <a href="#" className="text-gray-700">TouchPoints</a>
-      <a href="#" className="text-gray-700">Resources</a>
+      <a href="" className="text-gray-700">Experiences</a>
+      <a href="" className="text-gray-700">Technologies</a>
+      <a href="" className="text-gray-700">TouchPoints</a>
+      <a href="" className="text-gray-700">Resources</a>
     </div>
 
     {/* "GET A DEMO" Button at the Bottom */}
@@ -132,10 +137,7 @@ useEffect(() => {
       </button>
     </div>
   </div>
-</div>
-
-
-</div>
+</div></>
   );
 };
 
