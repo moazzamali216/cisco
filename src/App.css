@@ -12,3 +12,19 @@ html,body{
   padding: 0;
   margin: 0;box-sizing: border-box;
 }
+.swiper-button-prev{
+left:0 !important;
+/* font-size: 12px !important; */
+/* width: 200px !important; */
+}.swiper-button-next{
+  right:0 !important;}
+  .bg-img {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.9), /* Transparent white overlay */
+        rgba(255, 255, 255, 0.9)
+      ),
+      url("./assets/images/world.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }

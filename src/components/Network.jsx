@@ -58,8 +58,9 @@ const Network = () => {
   ];
 
   return (
-    <div className="container px-10 py-20 mx-auto">
-      <h1 className="text-5xl font-medium text-center work-sans">
+<>
+<div className="container pt-20 mx-auto">
+      <h1 className="text-5xl px-4 font-medium text-center work-sans">
         Everything works better on a cloud- <br /> managed network.
       </h1>
 
@@ -71,13 +72,13 @@ const Network = () => {
             slidesPerView={1}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
-            navigation
-            modules={[Autoplay, Pagination, Navigation]}
+            
+            modules={[Autoplay, Pagination]}
             className="mySwiper"
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="flex justify-center py-5 h-[500px] rounded-3xl transition-all md:hover:shadow-xl drop-shadow-xl items-center flex-col">
+                <div className="flex mx-4 py-4 my-10 px-6 sm:px-16 justify-center h-[450px] sm:h-[500px] rounded-3xl transition-all hover:shadow-xl drop-shadow-xl items-center flex-col">
                   <img className="w-[130px]" src={card.image} alt={card.title} />
                   <h1 className="text-[#3C3C3C] text-2xl font-semibold mt-4 text-center">
                     {card.title}
@@ -102,11 +103,11 @@ const Network = () => {
       ) : (
         <div>
           {/* Desktop Grid Layout */}
-          <div className="grid mt-10 gap-x-10 grid-cols-2 lg:grid-cols-4">
+          <div className="grid px-4 py-4 mt-10 gap-x-10 grid-cols-2 lg:grid-cols-4">
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex justify-start py-5 rounded-3xl transition-all md:hover:shadow-xl md:drop-shadow-xl items-center flex-col"
+                className="flex px-4 justify-start py-5 rounded-3xl transition-all md:hover:shadow-xl md:drop-shadow-xl items-center flex-col"
               >
                 <img className="w-[100px] h-[100px]" src={card.image} alt={card.title} />
                 <h1 className="text-[#3C3C3C] text-2xl font-semibold mt-4 text-center">
@@ -131,6 +132,8 @@ const Network = () => {
         </div>
       )}
     </div>
+
+</>
   );
 };
 
