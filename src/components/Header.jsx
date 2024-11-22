@@ -46,6 +46,10 @@ useEffect(() => {
 
   <div  className=" md:flex hidden px-[25px] lg:px-[70px] xl:px-[135px]    container bg-white mx-auto py-6 flex-col  w-full">
    <div  className="w-full  gap-6  flex justify-end" >
+    <div className='flex gap-4 inter  font-light text-sm'>
+      <a href="">General Partner</a>
+      <a href="">New Partner</a>
+    </div>
     <div>
       <div className=" inter  font-light text-sm gap-2 flex items-baseline"> <i class="fa-solid text-[rgba(40,64,255,1)] fa-globe"></i><h4 className="text-gray-600">United States (English)</h4><i class="fa-solid text-[rgba(40,64,255,1)] fa-caret-down"></i></div>
     </div>
@@ -56,13 +60,13 @@ useEffect(() => {
    </div>
    <div className="  w-full  bg-white  top-0  flex mt-6">
     <div className="flex items-center">
-      <h1 className=" text-xl lg:text-3xl w-[100px] lg:w-[150px]">Logo Co.</h1>
+      <h1 className=" text-xl lg:text-3xl w-[100px] lg:w-[115px]">Logo Co.</h1>
     </div>
-    <div className="w-full px-1 lg:px-4 xl:px-10 justify-between flex items-center ">
-      <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">Experiences <i class="fa-solid  text-xs fa-chevron-down"></i></a>
-      <a href="#" className="text-gray-700 flex tracking-wide items-center gap-2 inter">Technologies <i class="fa-solid  text-xs fa-chevron-down"></i></a>
-      <a href="#" className="text-gray-700 flex tracking-wide items-center gap-2 inter">TouchPoints <i class="fa-solid  text-xs fa-chevron-down"></i></a>
-      <a href="#" className="text-gray-700 flex tracking-wide items-center gap-2 inter">Resources <i class="fa-solid  text-xs fa-chevron-down"></i></a>
+    <div className="w-full px-1 text-sm lg:px-4 xl:px-10 justify-between flex items-center ">
+    <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">Home </a>
+    <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">About   </a>
+      <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">First Responsder Agency First <i class="fa-solid  text-xs fa-chevron-down"></i></a>
+      <a href="#" className="text-gray-700 flex tracking-wide items-center gap-2 inter">Wireless Wireline AC Management <i class="fa-solid  text-xs fa-chevron-down"></i></a>
     </div>
     <div className="flex w-[200px] justify-between  items-center">
       <div className="flex items-center">
@@ -121,10 +125,10 @@ useEffect(() => {
 
     {/* Main Navigation Links for Mobile */}
     <div className="flex w-full justify-center items-center flex-col gap-6 mb-6">
-      <a href="" className="text-gray-700">Experiences</a>
-      <a href="" className="text-gray-700">Technologies</a>
-      <a href="" className="text-gray-700">TouchPoints</a>
-      <a href="" className="text-gray-700">Resources</a>
+    <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">Home </a>
+    <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">About   </a>
+      <a href="#" className="text-gray-700 font flex tracking-wide items-center gap-2 inter">First Responsder Agency First <i class="fa-solid  text-xs fa-chevron-down"></i></a>
+      <a href="#" className="text-gray-700 flex tracking-wide items-center gap-2 inter">Wireless Wireline AC Management <i class="fa-solid  text-xs fa-chevron-down"></i></a>
     </div>
 
     {/* "GET A DEMO" Button at the Bottom */}

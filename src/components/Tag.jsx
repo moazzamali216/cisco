@@ -13,9 +13,18 @@ const Tags = () => {
 
     </div>
     <div className=" w-full  md:py-0 py-10  sm:px-0 px-6 md:w-1/2 flex flex-col justify-center sm:items-start  ">
-    <h2 className="leading-0 work-sans text-start leading-[50px] sm:leading-[57px] font-normal text-[#212121]  text-[54px] sm:text-6xl">Proactively deliver <br /> exceptional <br /> experiences. </h2>
-    <p className="inter font-light lg:w-[470px] mt-6">Transform the way you assure great end-user experiences and achieve digital resilience across any network.</p>
-    <button className="font-semibold lg:text-lg text-base text-white w-fit tracking-wider px-4 py-4 rounded-full bg-blue-600  mt-8">LEARN ABOUT DXA</button>
+    <h2 className="leading-0 work-sans text-start leading-[50px] sm:leading-[57px] font-semibold text-[#212121]  text-[54px] sm:text-6xl">About Us </h2>
+    <div className="inter font-light lg:w-[470px] mt-6"><div>Our team is made up of seasoned telecommunication professionals who have extensive experience with all the major carriers. This gives us a distinct advantage when it comes to providing the best solutions for our customers’ varying needs.</div>
+
+
+
+<div className="mt-14"> We take care of management, procurement and implementation of systems so our customers can focus on the main aspects of their business..</div></div>
+
+<div className="flex flex-wrap gap-5">
+<button className="font-semibold lg:text-lg text-base text-white w-fit tracking-wider px-4 py-4 rounded-full bg-blue-600  mt-8">LEARN ABOUT DXA</button>
+    <button className="font-semibold lg:text-lg text-base text-blue-600 w-fit tracking-wider px-4 py-4 rounded-full border-2 border-blue-600  mt-8">CONTACT US</button>
+
+</div>
     </div>
 </div>
   </div>

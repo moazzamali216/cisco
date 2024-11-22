@@ -9,7 +9,7 @@ const BillService = () => {
 <div className="bg-img container mx-auto py-12">
 <div className="w-full flex gap-y-8 md:flex-row flex-col ">
  <div className="h-full flex flex-col justify-center pl-6 sm:pl-12 xl:pl-24 pr-4 sm:pr-8 xl:pr-16 w-full md:w-1/2">
- <h1 style={{lineHeight:"50px"}} className=" text-[40px] lg:text-[50px]  work-sans font-medium lea">A network <br /> platform  that <br /> grows  with you.</h1>
+ <h1 style={{lineHeight:"50px"}} className=" text-[40px] lg:text-[50px]  work-sans font-medium lea">Rate Plan Analysis and Optimization</h1>
  <p className="mt-3">Expand your business globally with the world’s largest cloud networking platform.</p>
  <div className="flex gap-3 mt-5 items-baseline">
   <i className="fa-solid fa-check text-[#3C3C3C] border-2 rounded-full px-[2.7px] text-xs border-[#3737da]"></i>

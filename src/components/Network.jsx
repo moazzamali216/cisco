@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react";
-import home from "../assets/images/home.svg";
-import cloud from '../assets/images/cloud.svg';
-import check from "../assets/images/check.svg";
-import disc from '../assets/images/disc.svg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,29 +28,45 @@ const Network = () => {
 
   const cards = [
     {
-      image: home,
-      title: "Hybrid Work",
-      description: "Scale your business and empower your workforce",
+      // image: home,
+      title: "Cellular Service for Business",
+      description: "Our mobility account team brings years of combined AT&T Mobility experience to our customers.Every individual on our team is considered a leader in..",
       linkText: "EVOLVE ENABLE WORK",
     },
     {
-      image: cloud,
-      title: "Remote WorkForce",
-      description: "Improve connectivity to create ideal experience for remote team",
+      // image: cloud,
+      title: "Fiber Internet for Business & Enterprise",
+      description: "AT&T provides first-class business internet service with no data caps, no equipment fees, and no annual term...",
       linkText: "POWER REMOTE WORK",
     },
     {
-      image: check,
-      title: "Safe Environments",
-      description: "Unite Physical Security & CyberSecurity to protect what matters most",
+      // image: check,
+      title: "Cloud Solutions",
+      description: "Businesses need to migrate to the cloud to stay competitive. We proudly offer AT&T end-to-end cloud-based designed to scale with your business...",
       linkText: "SECURE YOUR SPACES",
     },
     {
-      image: disc,
-      title: "Smart Spaces",
-      description: "Elevate the space where customer meet storage",
+      // image: disc,
+      title: "Cyber Securitys",
+      description: "Our expertise in threat intelligence and network security will give your business unrivaled secure connectivity..",
       linkText: "OPTIMIZE YOUR SPACES",
     },
+    {
+      // image: disc,
+      title: "AT&T",
+      description: "Our team of experts will help you navigate the AT&T landscape while taking ownership of the pre and post sale processes.",
+      linkText: "OPTIMIZE YOUR SPACES",
+    },
+    {
+      title:"Internet & WAN Networking",
+      description:"Discover the right network connectivity type for your SD-WAN solution. We specialize in simplifying...",
+      linkText:"MAKE YOUR INTERNET"
+    },
+    {
+title:"Business Voice Solution",
+description:"AT&T Phone for Business is a voice service provided over an Internet Protocol (VOiP) digital connection that...",
+linkText:"GROW YOUR BUSINESS"
+    }
   ];
 
   return (
@@ -79,7 +91,6 @@ const Network = () => {
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
                 <div className="flex mx-4 py-4 my-10 px-6 sm:px-16 justify-center h-[450px] sm:h-[500px] rounded-3xl transition-all hover:shadow-xl drop-shadow-xl items-center flex-col">
-                  <img className="w-[130px]" src={card.image} alt={card.title} />
                   <h1 className="text-[#3C3C3C] text-2xl font-semibold mt-4 text-center">
                     {card.title}
                   </h1>
@@ -109,7 +120,7 @@ const Network = () => {
                 key={index}
                 className="flex px-4 justify-start py-5 rounded-3xl transition-all md:hover:shadow-xl md:drop-shadow-xl items-center flex-col"
               >
-                <img className="w-[100px] h-[100px]" src={card.image} alt={card.title} />
+                {/* <img className="w-[100px] h-[100px]" src={card.image} alt={card.title} /> */}
                 <h1 className="text-[#3C3C3C] text-2xl font-semibold mt-4 text-center">
                   {card.title}
                 </h1>
