@@ -27,8 +27,8 @@ const Products = () => {
 
     return (
         <>
-            <div className="w-full mt-12">
-                <div className="container mx-auto">
+            <div className="w-full ] mt-12">
+                <div className="container  mx-auto">
                     <div className="w-full flex flex-col items-center">
                         <h1 className="text-5xl work-sans text-center font-semibold text-[#3C3C3C]">
                             Start your cloud-managed IT journey.
@@ -40,12 +40,12 @@ const Products = () => {
                             <br />
                             every step of the way.
                         </p>
-                        <button className="text-white bg-blue-600 px-6 mt-5 inter text-base sm:text-lg py-3 rounded-full font-medium tracking-wide">
+                        <button className="text-black border-2 border-tron-blue hover:bg-transparent hover:border-black transition-all bg-tron-blue px-6 mt-5 inter text-base sm:text-lg py-2.5 rounded-full font-medium tracking-wide">
                             BROWSE ALL PRODUCTS
                         </button>
                     </div>
                          {/* Product Cards Section */}
-                <div className="px-6 lg:px-24 gap-y-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+                <div className=" gap-y-10 grid px-4 xl:px-[120px]  sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
                     {cards.map((card, index) => (
                         <div key={index} className=" flex flex-col items-center">
                             {/* Background image */}
@@ -58,7 +58,7 @@ const Products = () => {
                                     alt=""
                                 /></div>
                                 <div>
-                                <button className="text-white bg-blue-600 px-6  mt-5 inter lg:text-base sm:text-sm py-3 rounded-full font-medium tracking-wide">
+                                <button className="text-black border-2 border-tron-blue  hover:border-black hover:bg-transparent transition-all bg-tron-blue px-6  mt-5 inter lg:text-sm sm:text-sm py-3 rounded-full font-medium tracking-wide">
        {card.button}
     </button>
                                 </div>

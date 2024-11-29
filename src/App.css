@@ -28,3 +28,53 @@ left:0 !important;
     background-position: center center;
     background-size: contain;
   }
+  
+  @keyframes slide {
+    0% {
+      left:600px;
+    }
+    100% {
+      left: -600px;
+    }
+  }
+  
+  .slide-1 {
+ /* Ensure element can move with 'left' */
+    animation-name: slide;
+    animation-duration: 10s; /* Add time unit (e.g., 5 seconds) */
+    animation-timing-function: linear; /* Smooth transition curve */
+    animation-iteration-count: infinite; /* Loop infinitely */
+    animation-direction: normal; /* Default direction (can add reverse if needed) */
+  }
+  @keyframes slide2 {
+    0% {
+      left:600px;
+    }
+    100% {
+      left: -600px;
+    } 
+  }
+
+   
+  .slide-2 {
+ /* Ensure element can move with 'left' */
+    animation-name: slide2;
+    animation-duration: 10s; /* Add time unit (e.g., 5 seconds) */
+    animation-timing-function: linear; /* Smooth transition curve */
+    animation-iteration-count: infinite; /* Loop infinitely */
+    animation-direction: normal;
+    animation-delay: 5s;
+    /* animation-delay: 10s; Default direction (can add reverse if needed) */
+  }
+.food-cont{
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/images/cattering.avif");
+}
+.resource{
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/images/backgroundgrains.png");
+}

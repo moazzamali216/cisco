@@ -1,41 +1,43 @@
+import logo from "../assets/images/logo.svg"
 const Footer = () => {
+
     return(<>
     <footer>
-        <div className="container px-4 py-10 mx-auto">
+        <div className="container px-4 xl:px-[120px]  py-10 mx-auto">
             <div className="w-full  h-full">
                 <div className="flex sm:pl-0    md:flex-row gap-y-14 flex-col  h-full">
-                    <div className="w-full md:w-[20%] lg:w-[30%]  flex justify-center md:justify-start">
-                        <h1 className="text-3xl">LOGO</h1>
+                    <div className="w-full md:w-[20%] lg:w-[30%]  flex items-start justify-center md:justify-start">
+                        <img src={logo} className="w-[200px]" alt="" />
                     </div>
-                    <div className=" w-full pl-6 sm:pl-0  sm:gap-x-2 gap-x-4 md:w-[80%] lg:w-[70%] h-full gap-y-10 grid-cols-2 grid md:grid-cols-3 ">
-                        <div className="h-full flex flex-col">
-                            <h1 className="text-gray-600 text-[14px] sm:text-lg font-medium inter pb-6 tracking-wider">Quick Links</h1>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider">Home</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">About</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">First Responder Agency Solutions</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Technology Solutions</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Wireless Account Management</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Contact</a>
+                    <div className=" w-full  sm:gap-x-6 gap-x-4 md:w-[80%] lg:w-[70%] h-full gap-y-10 grid-cols-2 grid md:grid-cols-3 ">
+                        <div className="h-full gap-1 flex flex-col">
+                            <h1 className="text-gray-600  font-poppins  font-[350] inter pb-6 tracking-wider">Quick Links</h1>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Home</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider ">About</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider mt-">First Responder Agency Solutions</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider mt-">Technology Solutions</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider mt-">Wireless Account Management</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider mt-">Contact</a>
                         </div>
-                        <div className="h-full flex flex-col">
-                            <h1 className="text-gray-600 text-[14px] sm:text-lg font-medium inter pb-6 tracking-wider">Technology Solutions</h1>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider">Cellular Service for Business</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Fibre Internet for Business & Enterprise</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Cloud Solutions</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">CyberSecurity</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">AT&T</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Internet & WAN Networking</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Business Voice Solution</a>
+                        <div className="h-full gap-1 flex flex-col">
+                            <h1 className="text-gray-600  font-poppins  font-[350] inter pb-6 tracking-wider">Technology Solutions</h1>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Cellular Service for Business</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Fibre Internet for Business & Enterprise</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Cloud Solutions</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">CyberSecurity</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">AT&T</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Internet & WAN Networking</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Business Voice Solution</a>
 
                         </div>
-                        <div className="h-full flex flex-col">
-                            <h1 className="text-gray-600 text-[14px] sm:text-lg font-medium inter pb-6 tracking-wider">Contact Information</h1>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider">Cellular Service for Business</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Fibre Internet for Business & Enterprise</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">Cloud Solutions</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">info@springsairns.com</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">212-991-8442</a>
-                            <a href="" className="text-gray-600 text-[14px] sm:text-[16px]  inter tracking-wider mt-3">90 Hausman St, Brooklyn NY 11222</a>
+                        <div className="h-full gap-1 flex flex-col">
+                            <h1 className="text-gray-600  font-poppins  font-[350] inter pb-6 tracking-wider">Contact Information</h1>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Cellular Service for Business</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Fibre Internet for Business & Enterprise</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">Cloud Solutions</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">info@springsairns.com</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">212-991-8442</a>
+                            <a href="" className="text-gray-600 font-poppins font-[350] text-[14px] sm:text-[16px]  inter tracking-wider">90 Hausman St, Brooklyn NY 11222</a>
 
 
 
