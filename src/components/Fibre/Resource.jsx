@@ -1,8 +1,4 @@
 import "../../App.css";
-import router from "../../assets/images/router.avif";
-import umbrella from "../../assets/images/umbrella.webp";
-import duo from "../../assets/images/duo.avif";
-import eye from "../../assets/images/eye.avif";
 
 const Resource = () => {
     // Data for each resource card

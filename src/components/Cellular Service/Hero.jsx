@@ -1,5 +1,4 @@
 
-import deploys from "../../assets/images/deploys.svg"
 import hero from "../../assets/images/women.png"
 const Hero = () => {
   
